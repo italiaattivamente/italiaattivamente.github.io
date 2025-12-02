@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Digitale Diffuso - AttivAmente</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-blue-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="http://static.photos/abstract/1200x630/42" alt="AttivAmente Logo" class="h-12 w-12 rounded-full mr-3">
+                <h1 class="text-2xl font-bold text-blue-800">AttivAmente</h1>
+            </div>
+            <nav class="flex flex-wrap justify-center gap-4">
+                <a href="index.html" class="text-blue-700 hover:text-blue-900 font-medium">Home</a>
+                <a href="coach-virtuale.html" class="text-blue-700 hover:text-blue-900 font-medium">Coach Virtuale</a>
+                <a href="matching-intergenerazionale.html" class="text-blue-700 hover:text-blue-900 font-medium">Matching Intergenerazionale</a>
+                <a href="centro-digitale.html" class="text-blue-700 hover:text-blue-900 font-medium">Centro Digitale</a>
+                <a href="memovita.html" class="text-blue-700 hover:text-blue-900 font-medium">MemoVita</a>
+                <a href="#contact" class="text-blue-700 hover:text-blue-900 font-medium">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Centro Digitale Diffuso</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">La tecnologia al servizio della tua comunità</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="http://static.photos/office/640x360/101" alt="Centro Digitale" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-4">Punti di incontro tecnologici nei quartieri</h3>
+                    <p class="text-gray-700 mb-6">Il Centro Digitale Diffuso è una rete di hub sociali distribuiti nei quartieri per facilitare l'accesso alla tecnologia. Partecipa a videocall con familiari, attività guidate e ricevi supporto tecnico specializzato.</p>
+                    
+                    <h4 class="text-xl font-bold text-blue-700 mb-3">Servizi disponibili:</h4>
+                    <ul class="list-disc pl-6 text-gray-700 mb-6 space-y-2">
+                        <li>Videochiamate con familiari e amici</li>
+                        <li>Corsi guidati sull'utilizzo dei dispositivi</li>
+                        <li>Supporto tecnico personalizzato</li>
+                        <li>Accesso internet gratuito</li>
+                        <li>Incontri sociali e attività comunitarie</li>
+                    </ul>
+                    
+                    <a href="registrati.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full inline-block transition duration-300">Trova il centro più vicino</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-blue-800 mb-12">Vantaggi del Centro Digitale</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="wifi" class="text-blue-600" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-blue-800 mb-2">Connettività</h4>
+                    <p class="text-gray-700">Accesso gratuito a internet e tecnologie moderne</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="help-circle" class="text-blue-600" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-blue-800 mb-2">Supporto Tecnico</h4>
+                    <p class="text-gray-700">Assistenza personalizzata per superare le difficoltà digitali</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="users" class="text-blue-600" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-blue-800 mb-2">Socialità</h4>
+                    <p class="text-gray-700">Incontri e attività per combattere l'isolamento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AttivAmente</h3>
+                    <p class="text-blue-200">Soluzioni intelligenti per un'invecchiamento attiva e consapevole.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Servizi</h4>
+                    <ul class="space-y-2">
+                        <li><a href="coach-virtuale.html" class="text-blue-200 hover:text-white">Coach Virtuale</a></li>
+                        <li><a href="matching-intergenerazionale.html" class="text-blue-200 hover:text-white">Matching Intergenerazionale</a></li>
+                        <li><a href="centro-digitale.html" class="text-blue-200 hover:text-white">Centro Digitale</a></li>
+                        <li><a href="memovita.html" class="text-blue-200 hover:text-white">MemoVita</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contatti</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1" style="width: 18px; height: 18px;"></i>
+                            <span>Via Roma 123, Milano</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2" style="width: 18px; height: 18px;"></i>
+                            <span>+39 02 1234567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2" style="width: 18px; height: 18px;"></i>
+                            <span>info@attivamente.it</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Seguici</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i data-feather="facebook" style="width: 20px; height: 20px;"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i data-feather="instagram" style="width: 20px; height: 20px;"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i data-feather="twitter" style="width: 20px; height: 20px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-300">
+                <p>&copy; 2023 AttivAmente. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

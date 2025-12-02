@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrati - AttivAmente</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-blue-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="http://static.photos/abstract/1200x630/42" alt="AttivAmente Logo" class="h-12 w-12 rounded-full mr-3">
+                <h1 class="text-2xl font-bold text-blue-800">AttivAmente</h1>
+            </div>
+            <nav class="flex flex-wrap justify-center gap-4">
+                <a href="index.html" class="text-blue-700 hover:text-blue-900 font-medium">Home</a>
+                <a href="coach-virtuale.html" class="text-blue-700 hover:text-blue-900 font-medium">Coach Virtuale</a>
+                <a href="matching-intergenerazionale.html" class="text-blue-700 hover:text-blue-900 font-medium">Matching Intergenerazionale</a>
+                <a href="centro-digitale.html" class="text-blue-700 hover:text-blue-900 font-medium">Centro Digitale</a>
+                <a href="memovita.html" class="text-blue-700 hover:text-blue-900 font-medium">MemoVita</a>
+                <a href="#contact" class="text-blue-700 hover:text-blue-900 font-medium">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Registrati Gratuitamente</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Unisciti alla community di AttivAmente e inizia il tuo percorso verso un'invecchiamento attivo</p>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <div class="bg-blue-50 rounded-xl p-8 shadow-md">
+                <h3 class="text-2xl font-bold text-blue-800 mb-6 text-center">Compila il modulo di registrazione</h3>
+                
+                <form id="registration-form" class="space-y-6">
+                    <div>
+                        <label for="fullname" class="block text-gray-700 font-medium mb-2">Nome Completo *</label>
+                        <input type="text" id="fullname" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email *</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-gray-700 font-medium mb-2">Telefono</label>
+                        <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label for="age" class="block text-gray-700 font-medium mb-2">Età *</label>
+                        <select id="age" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                            <option value="">Seleziona la tua fascia d'età</option>
+                            <option value="60-65">60-65 anni</option>
+                            <option value="66-70">66-70 anni</option>
+                            <option value="71-75">71-75 anni</option>
+                            <option value="76-80">76-80 anni</option>
+                            <option value="80+">Oltre 80 anni</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Servizi di interesse</label>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600" value="coach">
+                                <span class="ml-2">Coach Virtuale</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600" value="matching">
+                                <span class="ml-2">Matching Intergenerazionale</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600" value="centro">
+                                <span class="ml-2">Centro Digitale</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600" value="memo">
+                                <span class="ml-2">MemoVita</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Messaggio (opzionale)</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <input type="checkbox" id="privacy" class="rounded text-blue-600" required>
+                        <label for="privacy" class="ml-2 text-gray-700">Accetto la <a href="#" class="text-blue-600 hover:underline">privacy policy</a> *</label>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">Registrati Ora</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AttivAmente</h3>
+                    <p class="text-blue-200">Soluzioni intelligenti per un'invecchiamento attiva e consapevole.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Servizi</h4>
+                    <ul class="space-y-2">
+                        <li><a href="coach-virtuale.html" class="text-blue-200 hover:text-white">Coach Virtuale</a></li>
+                        <li><a href="matching-intergenerazionale.html" class="text-blue-200 hover:text-white">Matching Intergenerazionale</a></li>
+                        <li><a href="centro-digitale.html" class="text-blue-200 hover:text-white">Centro Digitale</a></li>
+                        <li><a href="memovita.html" class="text-blue-200 hover:text-white">MemoVita</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contatti</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1" style="width: 18px; height: 18px;"></i>
+                            <span>Via Roma 123, Milano</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2" style="width: 18px; height: 18px;"></i>
+                            <span>+39 02 1234567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2" style="width: 18px; height: 18px;"></i>
+                            <span>info@attivamente.it</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Seguici</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i data-feather="facebook" style="width: 20px; height: 20px;"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i data-feather="instagram" style="width: 20px; height: 20px;"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i data-feather="twitter" style="width: 20px; height: 20px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-300">
+                <p>&copy; 2023 AttivAmente. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple validation
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const age = document.getElementById('age').value;
+            const privacy = document.getElementById('privacy').checked;
+            
+            if (!fullname || !email || !age || !privacy) {
+                alert('Per favore compila tutti i campi obbligatori.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Per favore inserisci un indirizzo email valido.');
+                return;
+            }
+            
+            // Success message
+            alert('Registrazione completata con successo! Ti contatteremo al più presto.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
